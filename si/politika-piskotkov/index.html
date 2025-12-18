@@ -74,6 +74,13 @@
       rel="apple-touch-icon"
     />
     <link href="https://www.dfreshcut.si/politika-piskotkov" rel="canonical" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <script
       async=""
       src="https://www.googletagmanager.com/gtag/js?id=G-ET49S48WZT"
@@ -87,6 +94,23 @@
       gtag("js", new Date());
       gtag("config", "G-ET49S48WZT");
     </script>
+    <style>
+      /* Fix menu button icon visibility on mobile */
+      .menu-button {
+        color: var(--brand) !important;
+        padding: 1.5rem 2rem !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .menu-button.w--open {
+        padding: 1.5rem 2rem !important;
+      }
+      .menu-button i {
+        font-size: 24px;
+        color: var(--brand);
+      }
+    </style>
   </head>
   <body>
     <div class="w-embed">
@@ -223,7 +247,7 @@
           /></a>
         </div>
         <div class="menu-button w-nav-button">
-          <div class="icon w-icon-nav-menu"></div>
+          <i class="fa-solid fa-bars"></i>
         </div>
       </div>
     </div>
